@@ -1,32 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!--   index.css -->
     <link rel="stylesheet" type="text/css" href="src/css/index.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--   website title -->
+    <title>불후의 명작</title>
 </head>
 
-<body onload = "openButton()"></body>
 
-<div id="titlebox">
-<h1>세계 명화</h1>
-<br>
-    <input id="search" type="search" placeholder="영화 제목을 검색하세요"> </input>
-    <button onclick="search()" id="button" type="button">검색</button>
+<body onload="openButton()"> 
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@500&display=swap"
+    rel="stylesheet">
+
+
+<div class="titlebox">
+    <h1 id = "titleSize">불후의 명작들</h1>
+<p id="boxes">
+<input type="search" id="search" placeholder="영화 제목을 검색하세요"></input>
+<button type="button" onclick="search()" id="button">검색</button>
+</p>
 </div>
-
 
 <div id="cards">
-  
+   
 </div>
 
 
-<script type="text/javascript" src="src/js/index.js"></script>  //index.js 연결
-<script type="text/javascript" src="src/js/search.js"></script> //search.js 연결
-
+<script type="text/javascript" src="src/js/index.js"></script>
+<script type="text/javascript" src="src/js/search.js"></script>
 
 </body>
+
 </html>
+
+<!-- 해석 -->
+
+<!-- index.js파일 전부를 openButton()함수안에 넣어서, 
+index.html body태그를 만나면 onload로 openButton()함수 자동실행됨 -->
+
+<!-- input 검색창, placeholder: 검색창 빈칸에 넣을 글자 , onclick하면 search()함수 작동 
+input 검색창의 id="search"는 search.js의 let searchTitle = document.getElementById와 연결됨
+
+
+search.js파일 전부를 search()함수안에 넣어서 onclick하면 search()함수 자동실행됨-->
+
+<!-- id="cards"는 index.js의 맨아래 document.getElementById("cards") 연결시키기 위한 아이디값.-->
+
+<!-- script 태그는 body의 맨 아래부분이 넣어 html을 js파일과 연결시킨다. -->
+<!-- index.js 연결 = 아무것도 입력 안했을때 메인 페이지.  -->
+<!-- search.js 연결 = 검색어를 입력할떄 검색어를 해석하기 위한 자바스크립트. -->

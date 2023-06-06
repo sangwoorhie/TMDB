@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>상세페이지</title>
+  </head>
+  <body onload="detailButton()">
+    
+    <div class="detailPage" id="detailPage"></div>
+
+    <script type="text/javascript" src="src/js/detail.js"></script>
+  </body>
+</html>
+
+<!-- 해석 -->
+
+<!-- search.js파일 전부를 detailButton()함수안에 넣어서, 
+detail.html body태그를 만나면 onload로 detailButton()함수 자동실행됨 -->
+
+<!-- id="detailPage"는 search.js의 조건식 다음에 document.getElementById("detailPage") 연결시키기 위한 아이디값.-->
+
+<!-- script 태그는 body의 맨 아래부분이 넣어 html을 js파일과 연결시킨다. -->
+<!-- search.js 연결 = 검색어를 입력했을때 나오도록 하는 상세페이지.  -->
